@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Siti Nur Fathihah Binti Zulkiflie & Mohd Arif Asyraf Bin Mohd Nasir — Wedding Invite</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#F9F6F0; --emerald:#0C4B43; --emerald-dark:#083730; --gold:#C9A66B; --terracotta:#C47A5A;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--ivory);color:var(--emerald);font-family:'Montserrat',sans-serif}
+  a{color:inherit}
+  .lang-toggle{position:fixed;top:14px;right:14px;z-index:10;display:flex;gap:8px;}
+  .lang-toggle button{background:#ffffffc9;border:1px solid #eadfcc;border-radius:999px;padding:6px 12px;cursor:pointer;font-weight:600}
+  .lang-toggle button.active{background:var(--emerald);color:#fff;border-color:var(--emerald)}
+
+  .hero{min-height:90vh;background:linear-gradient(rgba(12,75,67,.45),rgba(12,75,67,.45)), url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;padding:32px;}
+  .hero-inner{border:1.5px solid rgba(255,255,255,.65);padding:28px 28px 34px;border-radius:10px;backdrop-filter: blur(2px);}
+  .hero .names{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5.8vw,4.1rem);line-height:1.1;color:#fff;font-weight:600;letter-spacing:.5px;}
+  .amp{color:var(--gold)}
+  .date-badge{display:inline-block;margin-top:14px;padding:8px 14px;border:1px solid var(--gold);color:#fff;border-radius:20px;font-size:.95rem;background:rgba(201,166,107,.15)}
+
+  .section{max-width:980px;margin:auto;padding:64px 22px}
+  .section.narrow{max-width:760px}
+  h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 8px;letter-spacing:.3px}
+  .sub{color:#2e6d63;margin-top:0;margin-bottom:18px}
+  .card{background:#fff;border:1px solid #eadfcc;border-radius:12px;padding:22px 20px}
+
+  .couple{display:grid;gap:22px;grid-template-columns:1fr;align-items:center}
+  @media (min-width:840px){.couple{grid-template-columns:1.1fr 1fr}}
+  .portrait{border-radius:12px;overflow:hidden;border:1px solid #eadfcc}
+  .portrait img{width:100%;display:block}
+
+  .pattern{width:120px;margin:18px auto 28px;opacity:.7;filter:contrast(1.1) saturate(1.05)}
+
+  .countdown{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+  .cd-box{min-width:88px;background:#fff;border:1px solid #eadfcc;border-radius:10px;padding:14px 12px;text-align:center}
+  .cd-num{font-size:1.7rem;font-weight:700;color:var(--emerald)}
+  .cd-label{font-size:.8rem;color:#4f7d75;letter-spacing:.3px;text-transform:uppercase}
+
+  .timeline{margin-top:16px}
+  .tl-item{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:14px 0;border-bottom:1px dashed #e6d9c5}
+  .tl-time{font-weight:600;color:var(--terracotta)}
+  .tl-title{font-weight:600}
+  .tl-note{color:#4f7d75;margin-top:4px}
+
+  form input, form select, form textarea{width:100%;padding:14px 14px;margin:8px 0;border-radius:8px;border:1px solid ;border-color: var(--gold);background:#fff;color:var(--emerald)}
+  button{background:var(--emerald);color:#fff;padding:14px 22px;border:none;border-radius:8px;cursor:pointer;font-weight:600;letter-spacing:.2px;transition:.25s}
+  button:hover{background:var(--emerald-dark)}
+  .btn-row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn-ghost{background:#fff;color:var(--emerald);border:1px solid var(--emerald)}
+
+  .cal-grid{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .map-wrap iframe{width:100%;height:360px;border:0;border-radius:12px}
+
+  footer{text-align:center;padding:28px 18px;background:var(--emerald);color:#fff;margin-top:40px}
+</style>
+</head>
+<body>
+
+<!-- Language Toggle -->
+<div class="lang-toggle" aria-label="Language switcher">
+  <button id="lang-en" class="active">EN</button>
+  <button id="lang-bm">BM</button>
+</div>
+
+<!-- HERO -->
+<header class="hero" role="banner">
+  <div class="hero-inner" aria-label="Hero">
+    <div class="names">Siti Nur Fathihah Binti Zulkiflie <span class="amp">&amp;</span> Mohd Arif Asyraf Bin Mohd Nasir</div>
+    <div class="date-badge" data-i18n-key="dateBadge">3 October 2026 • 12:00 PM • Putrajaya</div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="section narrow" id="intro">
+  <img class="pattern" alt="Andalusian pattern" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Islamic_Geometric_Pattern_02.svg/512px-Islamic_Geometric_Pattern_02.svg.png"/>
+  <h2 data-i18n-key="introTitle">We Are Getting Married</h2>
+  <p class="sub" data-i18n-key="introSub">With joy in our hearts, we invite you to celebrate our union in an intimate Andalusian‑inspired ceremony.</p>
+  <div class="card couple">
+    <div class="portrait">
+      <img alt="Couple placeholder" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1600&auto=format&fit=crop"/>
+    </div>
+    <div>
+      <h3 style="margin:0 0 8px;font-family:'Cormorant Garamond',serif;" data-i18n-key="coupleHeading">The Couple</h3>
+      <p style="margin:0"><strong data-i18n-key="brideLabel">Bride:</strong> Siti Nur Fathihah Binti Zulkiflie</p>
+      <p style="margin:4px 0 10px"><strong data-i18n-key="groomLabel">Groom:</strong> Mohd Arif Asyraf Bin Mohd Nasir</p>
+      <p style="color:#4f7d75" data-i18n-key="dresscode">Your presence is the most precious gift to us. Dress code: Elegant with a touch of emerald or gold.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="section narrow" id="countdown">
+  <img class="pattern" alt="Andalusian pattern" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Islamic_Geometric_Pattern_02.svg/512px-Islamic_Geometric_Pattern_02.svg.png"/>
+  <h2 data-i18n-key="countdownTitle">Countdown to Our Day</h2>
+  <p class="sub" data-i18n-key="countdownSub">The celebration begins soon—see you there!</p>
+  <div class="countdown" aria-live="polite" aria-atomic="true">
+    <div class="cd-box"><div class="cd-num" id="cd-days">00</div><div class="cd-label" data-i18n-key="days">Days</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-hours">00</div><div class="cd-label" data-i18n-key="hours">Hours</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-mins">00</div><div class="cd-label" data-i18n-key="minutes">Minutes</div></div>
+    <div class="cd-box"><div class="cd-num" id="cd-secs">00</div><div class="cd-label" data-i18n-key="seconds">Seconds</div></div>
+  </div>
+  <p id="cd-done" style="display:none;margin-top:14px;color:var(--terracotta);font-weight:600" data-i18n-key="countdownDone">It's time! Welcome to the celebration 🎉</p>
+</section>
+
+<!-- DETAILS + SCHEDULE -->
+<section class="section narrow" id="details">
+  <img class="pattern" alt="Andalusian pattern" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Islamic_Geometric_Pattern_02.svg/512px-Islamic_Geometric_Pattern_02.svg.png"/>
+  <h2 data-i18n-key="detailsTitle">Wedding Details</h2>
+  <div class="card">
+    <p style="margin:6px 0"><strong data-i18n-key="dateLabel">Date:</strong> <span id="dateDisplay">Saturday, 3 October 2026</span></p>
+    <p style="margin:6px 0"><strong data-i18n-key="timeLabel">Time:</strong> 12:00 PM (GMT+8)</p>
+    <p style="margin:6px 0"><strong data-i18n-key="venueLabel">Venue:</strong> <span id="venueName">(Add venue name & address)</span></p>
+
+    <div class="timeline" id="timeline">
+      <div class="tl-item">
+        <div class="tl-time">11:30 AM</div>
+        <div>
+          <div class="tl-title" data-i18n-key="tl1Title">Guest Arrival & Registration</div>
+          <div class="tl-note" data-i18n-key="tl1Note">Light welcome drinks • Find your seat</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">12:00 PM</div>
+        <div>
+          <div class="tl-title" data-i18n-key="tl2Title">Solemnization / Nikah</div>
+          <div class="tl-note" data-i18n-key="tl2Note">An intimate ceremony with family & friends</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">12:45 PM</div>
+        <div>
+          <div class="tl-title" data-i18n-key="tl3Title">Luncheon</div>
+          <div class="tl-note" data-i18n-key="tl3Note">Please inform us of any dietary requirements via RSVP</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">1:30 PM</div>
+        <div>
+          <div class="tl-title" data-i18n-key="tl4Title">Speeches & Cake Cutting</div>
+          <div class="tl-note" data-i18n-key="tl4Note">Toasts, stories, and sweet moments</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">2:15 PM</div>
+        <div>
+          <div class="tl-title" data-i18n-key="tl5Title">Photo Session</div>
+          <div class="tl-note" data-i18n-key="tl5Note">Group photos by table</div>
+        </div>
+      </div>
+      <div class="tl-item" style="border-bottom:none">
+        <div class="tl-time">3:00 PM</div>
+        <div>
+          <div class="tl-title" data-i18n-key="tl6Title">Farewell</div>
+          <div class="tl-note" data-i18n-key="tl6Note">Thank you for celebrating with us</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADD TO CALENDAR -->
+<section class="section narrow" id="calendar">
+  <img class="pattern" alt="Andalusian pattern" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Islamic_Geometric_Pattern_02.svg/512px-Islamic_Geometric_Pattern_02.svg.png"/>
+  <h2 data-i18n-key="calendarTitle">Add to Calendar</h2>
+  <p class="sub" data-i18n-key="calendarSub">Save the date so you won’t miss it.</p>
+  <div class="cal-grid">
+    <a id="addGoogle" target="_blank"><button class="btn-ghost">Google</button></a>
+    <a id="addOutlook" target="_blank"><button class="btn-ghost">Outlook</button></a>
+    <a id="addApple"><button class="btn-ghost">Apple (.ics)</button></a>
+  </div>
+</section>
+
+<!-- MAP & DIRECTIONS -->
+<section class="section narrow" id="map">
+  <img class="pattern" alt="Andalusian pattern" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Islamic_Geometric_Pattern_02.svg/512px-Islamic_Geometric_Pattern_02.svg.png"/>
+  <h2 data-i18n-key="mapTitle">Map & Directions</h2>
+  <div class="card">
+    <div class="map-wrap" id="mapWrap" style="display:none;">
+      <iframe id="mapIframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <div class="btn-row" style="margin-top:12px">
+      <a id="openMaps" target="_blank"><button class="btn-ghost" data-i18n-key="openMaps">Open in Google Maps</button></a>
+      <a id="waDirections" target="_blank"><button class="btn-ghost" data-i18n-key="waDirections">WhatsApp Directions</button></a>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="section narrow" id="rsvp">
+  <img class="pattern" alt="Andalusian pattern" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Islamic_Geometric_Pattern_02.svg/512px-Islamic_Geometric_Pattern_02.svg.png"/>
+  <h2 data-i18n-key="rsvpTitle">RSVP</h2>
+  <p class="sub" id="rsvpDeadline" data-i18n-key="rsvpSub">Kindly respond by 15 September 2026</p>
+
+  <form id="rsvpForm" class="card" autocomplete="on">
+    <label for="name" style="font-weight:600" data-i18n-key="labelName">Full Name</label>
+    <input id="name" name="name" placeholder="e.g., Ahmad bin Ali" required>
+
+    <label for="attendance" style="font-weight:600" data-i18n-key="labelAttendance">Will you attend?</label>
+    <select id="attendance" name="attendance" required>
+      <option value="" data-i18n-key="optSelect">Please select</option>
+      <option value="Yes" data-i18n-key="optYes">Yes, I will attend</option>
+      <option value="No" data-i18n-key="optNo">Sorry, I cannot attend</option>
+    </select>
+
+    <label for="guests" style="font-weight:600" data-i18n-key="labelGuests">Number of Guests (including you)</label>
+    <input id="guests" name="guests" type="number" min="1" max="10" placeholder="e.g., 1">
+
+    <label for="diet" style="font-weight:600" data-i18n-key="labelDiet">Dietary Needs</label>
+    <input id="diet" name="diet" placeholder="e.g., vegetarian, no nuts">
+
+    <label for="message" style="font-weight:600" data-i18n-key="labelMessage">Message</label>
+    <textarea id="message" name="message" rows="3" placeholder="Leave a message for the couple"></textarea>
+
+    <button type="submit" data-i18n-key="btnSubmit">Submit RSVP</button>
+    <p id="thanksMsg" style="display:none;margin-top:14px;color:var(--terracotta);font-weight:600" data-i18n-key="thanksMsg">Thank you! Your RSVP has been submitted.</p>
+  </form>
+</section>
+
+<footer>
+  Made with love • Siti Nur Fathihah Binti Zulkiflie & Mohd Arif Asyraf Bin Mohd Nasir
+</footer>
+
+<script>
+  // ===== CONFIG =====
+  const CONFIG = {
+    event: {
+      title: 'Siti Nur Fathihah Binti Zulkiflie & Mohd Arif Asyraf Bin Mohd Nasir — Wedding',
+      startISO: '2026-10-03T12:00:00+08:00', // local time with TZ offset
+      endISO: '2026-10-03T15:00:00+08:00',
+      location: '(Add venue name & address)',
+      mapUrl: '', // paste Google Maps share URL (for opening)
+      mapEmbed: '', // paste Google Maps "Embed map" src URL (for iframe)
+      timezone: 'Asia/Kuala_Lumpur'
+    },
+    rsvp: {
+      endpoint: '', // <-- Paste Google Apps Script Web App URL here
+    },
+    notifyEmail: '' // optional: for your reference in Apps Script
+  };
+
+  // ===== Language (EN / BM) =====
+  const I18N = {
+    en: {
+      dateBadge: '3 October 2026 • 12:00 PM • Putrajaya',
+      introTitle: 'We Are Getting Married',
+      introSub: 'With joy in our hearts, we invite you to celebrate our union in an intimate Andalusian‑inspired ceremony.',
+      coupleHeading: 'The Couple', brideLabel:'Bride:', groomLabel:'Groom:',
+      dresscode:'Your presence is the most precious gift to us. Dress code: Elegant with a touch of emerald or gold.',
+      countdownTitle:'Countdown to Our Day', countdownSub:'The celebration begins soon—see you there!',
+      days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds',
+      countdownDone:"It's time! Welcome to the celebration 🎉",
+      detailsTitle:'Wedding Details', dateLabel:'Date:', timeLabel:'Time:', venueLabel:'Venue:',
+      tl1Title:'Guest Arrival & Registration', tl1Note:'Light welcome drinks • Find your seat',
+      tl2Title:'Solemnization / Nikah', tl2Note:'An intimate ceremony with family & friends',
+      tl3Title:'Luncheon', tl3Note:'Please inform us of any dietary requirements via RSVP',
+      tl4Title:'Speeches & Cake Cutting', tl4Note:'Toasts, stories, and sweet moments',
+      tl5Title:'Photo Session', tl5Note:'Group photos by table',
+      tl6Title:'Farewell', tl6Note:'Thank you for celebrating with us',
+      calendarTitle:'Add to Calendar', calendarSub:"Save the date so you won’t miss it.",
+      mapTitle:'Map & Directions', openMaps:'Open in Google Maps', waDirections:'WhatsApp Directions',
+      rsvpTitle:'RSVP', rsvpSub:'Kindly respond by 15 September 2026',
+      labelName:'Full Name', labelAttendance:'Will you attend?', optSelect:'Please select', optYes:'Yes, I will attend', optNo:'Sorry, I cannot attend', labelGuests:'Number of Guests (including you)', labelDiet:'Dietary Needs', labelMessage:'Message', btnSubmit:'Submit RSVP', thanksMsg:'Thank you! Your RSVP has been submitted.'
+    },
+    bm: {
+      dateBadge: '3 Oktober 2026 • 12:00 PM • Putrajaya',
+      introTitle: 'Kami Akan Melangsungkan Perkahwinan',
+      introSub: 'Dengan penuh kesyukuran, kami menjemput anda meraikan penyatuan kami dalam suasana elegan berilhamkan Andalusia.',
+      coupleHeading: 'Pengantin', brideLabel:'Pengantin Perempuan:', groomLabel:'Pengantin Lelaki:',
+      dresscode:'Kehadiran anda adalah hadiah paling bermakna. Kod pakaian: Elegan dengan sentuhan zamrud atau emas.',
+      countdownTitle:'Kiraan Detik ke Hari Bahagia', countdownSub:'Majlis akan bermula tidak lama lagi—jumpa anda di sana!',
+      days:'Hari', hours:'Jam', minutes:'Minit', seconds:'Saat',
+      countdownDone:'Masa telah tiba! Selamat meraikan 🎉',
+      detailsTitle:'Butiran Majlis', dateLabel:'Tarikh:', timeLabel:'Masa:', venueLabel:'Lokasi:',
+      tl1Title:'Kedatangan & Pendaftaran', tl1Note:'Minuman ringan • Sila duduk di meja anda',
+      tl2Title:'Majlis Akad Nikah', tl2Note:'Majlis ringkas bersama keluarga & rakan',
+      tl3Title:'Jamuan Tengah Hari', tl3Note:'Maklumkan keperluan diet melalui RSVP',
+      tl4Title:'Ucapan & Potong Kek', tl4Note:'Ucapan, kisah dan momen manis',
+      tl5Title:'Sesi Bergambar', tl5Note:'Bergambar mengikut meja',
+      tl6Title:'Tamat Majlis', tl6Note:'Terima kasih kerana meraikan bersama kami',
+      calendarTitle:'Tambah ke Kalendar', calendarSub:'Simpan tarikh supaya tidak terlepas.',
+      mapTitle:'Peta & Arah Tuju', openMaps:'Buka di Google Maps', waDirections:'WhatsApp Arah Tuju',
+      rsvpTitle:'RSVP', rsvpSub:'Mohon sahkan kehadiran sebelum 15 September 2026',
+      labelName:'Nama Penuh', labelAttendance:'Adakah anda akan hadir?', optSelect:'Sila pilih', optYes:'Ya, saya akan hadir', optNo:'Maaf, saya tidak dapat hadir', labelGuests:'Bilangan tetamu (termasuk anda)', labelDiet:'Keperluan Diet', labelMessage:'Mesej', btnSubmit:'Hantar RSVP', thanksMsg:'Terima kasih! RSVP anda telah diterima.'
+    }
+  };
+
+  function setLang(lang) {
+    const dict = I18N[lang];
+    document.querySelectorAll('[data-i18n-key]').forEach(el => {
+      const key = el.getAttribute('data-i18n-key');
+      if (dict[key] !== undefined) el.textContent = dict[key];
+    });
+    document.getElementById('lang-en').classList.toggle('active', lang==='en');
+    document.getElementById('lang-bm').classList.toggle('active', lang==='bm');
+  }
+  document.getElementById('lang-en').onclick = () => setLang('en');
+  document.getElementById('lang-bm').onclick = () => setLang('bm');
+
+  // ===== Countdown =====
+  const EVENT_START = new Date(CONFIG.event.startISO);
+  const dEl = document.getElementById('cd-days');
+  const hEl = document.getElementById('cd-hours');
+  const mEl = document.getElementById('cd-mins');
+  const sEl = document.getElementById('cd-secs');
+  const doneEl = document.getElementById('cd-done');
+  function updateCountdown(){
+    const now = new Date().getTime();
+    const target = EVENT_START.getTime();
+    const diff = target - now;
+    if(diff <= 0){ dEl.textContent=hEl.textContent=mEl.textContent=sEl.textContent='00'; if(doneEl) doneEl.style.display='block'; clearInterval(timer); return; }
+    const d = Math.floor(diff / (1000*60*60*24));
+    const h = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const m = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const s = Math.floor((diff % (1000*60)) / 1000);
+    dEl.textContent = String(d).padStart(2,'0');
+    hEl.textContent = String(h).padStart(2,'0');
+    mEl.textContent = String(m).padStart(2,'0');
+    sEl.textContent = String(s).padStart(2,'0');
+  }
+  const timer = setInterval(updateCountdown, 1000); updateCountdown();
+
+  // ===== Calendar Links =====
+  const EVENT_END = new Date(CONFIG.event.endISO);
+  function toUTCString(dt){
+    const y = dt.getUTCFullYear();
+    const m = String(dt.getUTCMonth()+1).padStart(2,'0');
+    const d = String(dt.getUTCDate()).padStart(2,'0');
+    const hh = String(dt.getUTCHours()).padStart(2,'0');
+    const mm = String(dt.getUTCMinutes()).padStart(2,'0');
+    const ss = String(dt.getUTCSeconds()).padStart(2,'0');
+    return `${y}{m}{d}T${hh}{mm}{ss}Z`;
+  }
+  const startUTC = toUTCString(EVENT_START);
+  const endUTC = toUTCString(EVENT_END);
+  const title = CONFIG.event.title;
+  const details = 'We look forward to celebrating with you!';
+  const loc = CONFIG.event.location;
+
+  const googleHref = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startUTC}/${endUTC}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(loc)}`;
+  const outlookHref = `https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&startdt=${encodeURIComponent(CONFIG.event.startISO)}&enddt=${encodeURIComponent(CONFIG.event.endISO)}&subject=${encodeURIComponent(title)}&location=${encodeURIComponent(loc)}&body=${encodeURIComponent(details)}`;
+
+  document.getElementById('addGoogle').href = googleHref;
+  document.getElementById('addOutlook').href = outlookHref;
+
+  // Apple / ICS
+  function buildICS(){
+    return `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Andalusian Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:${startUTC}
+DTSTART:${startUTC}
+DTEND:${endUTC}
+SUMMARY:${title}
+LOCATION:${loc}
+DESCRIPTION:${details}
+END:VEVENT
+END:VCALENDAR`;
+  }
+  document.getElementById('addApple').addEventListener('click', function(e){
+    e.preventDefault();
+    const blob = new Blob([buildICS()], { type: 'text/calendar;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'wedding.ics'; a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  // ===== Map & WhatsApp =====
+  if (CONFIG.event.mapEmbed) {
+    document.getElementById('mapWrap').style.display = 'block';
+    document.getElementById('mapIframe').src = CONFIG.event.mapEmbed;
+  }
+  const mapLink = CONFIG.event.mapUrl || '#';
+  document.getElementById('openMaps').href = mapLink;
+  const waText = `Directions to our wedding: ${mapLink}`;
+  document.getElementById('waDirections').href = `https://wa.me/?text=${encodeURIComponent(waText)}`;
+
+  // ===== RSVP submit to Google Apps Script =====
+  document.getElementById('rsvpForm').addEventListener('submit', async function(e){
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(this).entries());
+    data.timestamp = new Date().toISOString();
+    try {
+      if (!CONFIG.rsvp.endpoint) throw new Error('No RSVP endpoint configured');
+      await fetch(CONFIG.rsvp.endpoint, { method:'POST', mode:'no-cors', body: JSON.stringify(data), headers: {'Content-Type':'application/json'} });
+      document.getElementById('thanksMsg').style.display = 'block';
+      this.reset();
+    } catch(err) {
+      alert('RSVP not sent. Please try again later.');
+      console.error(err);
+    }
+  });
+
+  // Initialize language to EN by default
+  setLang('en');
+
+  // Display venue from config
+  if (CONFIG.event.location && CONFIG.event.location !== '(Add venue name & address)') {
+    document.getElementById('venueName').textContent = CONFIG.event.location;
+  }
+</script>
+</body>
+</html>
