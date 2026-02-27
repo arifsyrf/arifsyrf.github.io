@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fathihah & Asyraf — Wedding Invitation (3 Oct 2026)</title>
+  <meta name="description" content="Wedding invitation of Fathihah & Asyraf — 3 Oct 2026 at ISTAC, Kuala Lumpur. RSVP, directions, add-to-calendar, and more."/>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+  <meta property="og:title" content="Fathihah & Asyraf — 3 Oct 2026"/>
+  <meta property="og:description" content="Join us at ISTAC, Kuala Lumpur. RSVP & directions inside."/>
+  <meta property="og:image" content="assets/hero.jpg"/>
+  <meta property="og:type" content="website"/>
+  <link rel="preload" href="assets/hero.jpg" as="image">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="hero" role="banner">
+    <img src="assets/hero.jpg" alt="Soft pastel background with initials F and A" class="hero-img"/>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="bismillah" aria-label="Bismillahir Rahmanir Rahim">﷽</p>
+      <p class="salam" data-i18n="salam">Assalamualaikum warahmatullahi wabarakatuh</p>
+      <h1 class="names">Fathihah <span class="amp">&</span> Asyraf</h1>
+      <p class="date" id="event-date">Saturday, 3 October 2026</p>
+      <p class="venue">ISTAC, Syed Muhammad Naquib al-Attas Library</p>
+      <div id="countdown" class="countdown" aria-live="polite"></div>
+      <div class="hero-actions">
+        <button id="btn-add-calendar" class="btn primary" data-i18n="addToCalendar">Add to Calendar</button>
+        <a id="btn-google-calendar" class="btn ghost" target="_blank" rel="noopener" data-i18n="addToGoogleCalendar" href="#">Google Calendar</a>
+      </div>
+      <div class="toggles">
+        <button id="lang-toggle" class="btn small" aria-label="Toggle language">EN / BM</button>
+        <button id="music-toggle" class="btn small" aria-label="Toggle background music">♫</button>
+      </div>
+    </div>
+    <audio id="bg-music" src="assets/music/bg-music.mp3" loop preload="metadata"></audio>
+  </header>
+
+  <main>
+    <section class="intro section">
+      <p class="dua" data-i18n="openingDua">With the blessings of Allah, we warmly invite you to our wedding.</p>
+    </section>
+
+    <section class="details section">
+      <h2 data-i18n="eventDetails">Event Details</h2>
+      <div class="grid two">
+        <div>
+          <h3 data-i18n="bride">Bride</h3>
+          <p><strong>Fathihah</strong></p>
+          <p data-i18n="brideParentsLabel" class="muted">Parents:</p>
+          <p id="bride-parents" class="muted">[Insert Bride's parents here]</p>
+        </div>
+        <div>
+          <h3 data-i18n="groom">Groom</h3>
+          <p><strong>Asyraf</strong></p>
+          <p data-i18n="groomParentsLabel" class="muted">Parents:</p>
+          <p id="groom-parents" class="muted">[Insert Groom's parents here]</p>
+        </div>
+      </div>
+      <div class="info-cards">
+        <div class="card">
+          <h4 data-i18n="dateTime">Date & Time</h4>
+          <p id="date-time-text">Saturday, 3 October 2026 — [Set Time]</p>
+        </div>
+        <div class="card">
+          <h4 data-i18n="venue">Venue</h4>
+          <p>
+            ISTAC, Syed Muhammad Naquib al-Attas Library<br/>
+            <span class="muted">24, Persiaran Tuanku Syed Sirajuddin, Bukit Tunku, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</span>
+          </p>
+          <div class="map-buttons">
+            <a id="btn-gmaps" class="btn" target="_blank" rel="noopener">Google Maps</a>
+            <a id="btn-waze" class="btn" target="_blank" rel="noopener">Waze</a>
+            <a id="btn-apple" class="btn" target="_blank" rel="noopener">Apple Maps</a>
+          </div>
+        </div>
+        <div class="card">
+          <h4 data-i18n="dressCode">Dress Code</h4>
+          <p data-i18n="dressCodeValue">Formal or Traditional Attire</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="itinerary section">
+      <h2 data-i18n="itinerary">Itinerary</h2>
+      <ul class="timeline" id="itinerary-list">
+        <!-- Items populated by script.js from CONFIG.ITINERARY -->
+      </ul>
+    </section>
+
+    <section class="venue section">
+      <h2 data-i18n="location">Location & Map</h2>
+      <div class="map-embed">
+        <!-- Google Maps Embed (no API key required). Replace q= if you prefer coordinates. -->
+        <iframe id="map-iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+          src="https://www.google.com/maps?q=ISTAC%20Syed%20Muhammad%20Naquib%20al-Attas%20Library&output=embed"></iframe>
+      </div>
+      <figure class="map-image">
+        <img src="assets/map-placeholder.jpg" alt="Map to ISTAC (placeholder)."/>
+        <figcaption class="muted" data-i18n="mapCaption">Map image placeholder — replace with an actual map screenshot if you like.</figcaption>
+      </figure>
+    </section>
+
+    <section class="rsvp section">
+      <h2>RSVP</h2>
+      <p class="muted" data-i18n="rsvpNote">Kindly confirm your attendance via the form below:</p>
+      <a id="btn-rsvp" class="btn primary" target="_blank" rel="noopener" data-i18n="openRSVP">Open RSVP Form</a>
+    </section>
+
+    <section class="closing section">
+      <blockquote class="ayah" aria-label="Quranic blessing">"And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy." — Qur'an 30:21</blockquote>
+      <p class="dua" data-i18n="closingDua">May Allah bless this union and grant us a home filled with sakinah, mawaddah, and rahmah.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Fathihah & Asyraf</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
