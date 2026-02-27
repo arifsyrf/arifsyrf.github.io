@@ -2,11 +2,11 @@
 // CONFIG — edit these values
 // ===============================
 const CONFIG = {
-  BRIDE_PARENTS: "[Insert Bride's parents here]",
-  GROOM_PARENTS: "[Insert Groom's parents here]",
+  BRIDE_PARENTS: "En Zulkiflie",
+  GROOM_PARENTS: "En Mohd Nasir & Puan Kartina Suria",
   ADDRESS_TEXT: "24, Persiaran Tuanku Syed Sirajuddin, Bukit Tunku, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur",
   VENUE_QUERY: "ISTAC Syed Muhammad Naquib al-Attas Library",
-  RSVP_FORM_URL: "#", // paste your Google Form link here
+  RSVP_FORM_URL: "https://forms.gle/jQHufPeoAjx3ZGP1A", // paste your Google Form link here
   // Event time (local to venue, Malaysia Time GMT+8)
   EVENT_START_LOCAL: "2026-10-03T11:00:00+08:00", // <-- adjust
   EVENT_END_LOCAL:   "2026-10-03T15:00:00+08:00", // <-- adjust
@@ -159,6 +159,7 @@ function downloadICS(){
     'END:VEVENT',
     'END:VCALENDAR'
   ].join('
+
 ');
 
   const blob = new Blob([ics], {type:'text/calendar'});
